@@ -29,7 +29,7 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "GAMEID",  # 0
+    "v10",  # 0
 ]
 
 parser = argparse.ArgumentParser()
@@ -44,7 +44,7 @@ parser.add_argument(
     "-v",
     "--version",
     choices=VERSIONS,
-    type=str.upper,
+    type=str,
     default=VERSIONS[DEFAULT_VERSION],
     help="version to build",
 )
